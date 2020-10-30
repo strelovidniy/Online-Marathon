@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sprint_01
 {
-    public class DisposePatternImplementer : CloseableResource , IDisposable
+    public class DisposePatternImplementer : CloseableResource, IDisposable
     {
         private bool disposed = false;
 

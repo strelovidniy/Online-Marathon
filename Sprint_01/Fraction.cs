@@ -42,7 +42,7 @@ namespace Sprint_01
             => a * !b;
 
         public static bool operator ==(Fraction a, Fraction b)
-            => a.Simplify().numerator == b.Simplify().numerator && a.Simplify().denominator == b.Simplify().denominator;
+            => a.ToString() == b.ToString();
 
         public static bool operator !=(Fraction a, Fraction b)
             => !(a == b);
