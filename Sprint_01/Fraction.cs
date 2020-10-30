@@ -68,7 +68,7 @@ namespace Sprint_01
 
             for (int i = (Math.Abs(num) > den ? den : Math.Abs(num)); i >= 1; --i)
             {
-                if (Math.Abs(num) % i == 0 && Math.Abs(den) % i == 0)
+                if (Math.Abs(num) % i == 0 && den % i == 0)
                 {
                     num /= i;
                     den /= i;
