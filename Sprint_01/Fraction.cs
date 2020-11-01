@@ -84,10 +84,8 @@ namespace Sprint_01
             {
                 return false;
             }
-
-            Fraction fraction = (Fraction)obj;
-
-            return this == fraction;
+            
+            return this == (Fraction)obj;
         }
 
         public override int GetHashCode() 

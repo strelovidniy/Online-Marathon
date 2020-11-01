@@ -8,7 +8,6 @@ namespace Sprint_01
     class Point
     {
         private int x;
-
         private int y;
 
         public static explicit operator double(Point point)
