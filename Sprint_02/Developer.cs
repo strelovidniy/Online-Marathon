@@ -13,7 +13,7 @@ namespace Sprint_02
             this.programmingLanguage = programmingLanguage;
         }
 
-        public void ShowInfo()
+        public new void ShowInfo()
         {
             Console.WriteLine("{0} has {1} years of experience.\n{2} is {3} programmer", name, Experience(), name, programmingLanguage);
         }

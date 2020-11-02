@@ -13,7 +13,7 @@ namespace Sprint_02
             this.isAuthomation = isAuthomation;
         }
 
-        public void ShowInfo()
+        public new void ShowInfo()
         {
             if (isAuthomation)
             {
