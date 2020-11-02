@@ -6,7 +6,9 @@ namespace Sprint_02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var a = new Employee("Roman", DateTime.Parse("02.11.2012"));
+
+            Console.WriteLine(a.Experience());
         }
     }
 }
