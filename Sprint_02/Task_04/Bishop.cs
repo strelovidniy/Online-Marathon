@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sprint_02
+namespace Sprint_02.Task_04
 {
-    class Rook : ChessFigure
+    class Bishop : ChessFigure
     {
         public override void Move()
         {
-            Console.WriteLine("Moves straight!");
+            Console.WriteLine("Moves by a diagonal!");
         }
     }
 }

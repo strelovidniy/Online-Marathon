@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Sprint_01
+namespace Sprint_01.Task_02
 {
     class Point
     {

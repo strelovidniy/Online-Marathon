@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sprint_02
+namespace Sprint_02.Task_04
 {
     abstract class ChessFigure
     {

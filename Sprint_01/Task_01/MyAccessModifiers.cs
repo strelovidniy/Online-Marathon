@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sprint_01
+namespace Sprint_01.Task_01
 {
     class MyAccessModifiers
     {

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sprint_02
+namespace Sprint_02.Task_03
 {
-    class Acinonychini
+    class Physics : Science
     {
+
     }
 }

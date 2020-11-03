@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sprint_01
+namespace Sprint_01.Task_05
 {
     class Adult : Person
     {
