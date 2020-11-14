@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Sprint_05.Level_3.Task_01
 {
@@ -13,39 +11,16 @@ namespace Sprint_05.Level_3.Task_01
         public Student(int ID, string Name)
         {
             this.ID = ID;
-            
-
-            if (Name == null)
-            {
-                this.Name = "";
-            }
-            else
-            {
-                this.Name = Name;
-            }
+            this.Name = Name ?? "";
         }
 
         public static HashSet<Student> GetCommonStudents(List<Student> list1, List<Student> list2)
-        {
-            var hashSet = new HashSet<Student>();
+            => list1.Intersect(list2).ToHashSet();
+        
+        public override int GetHashCode() 
+            => ID * Name.GetHashCode();
 
-            foreach (var student1 in list1)
-            {
-                foreach (var student2 in list2)
-                {
-                    if (student1.Equals(student2))
-                    {
-                        hashSet.Add(student1);
-                    }
-                }
-            }
-
-            return hashSet;
-        }
-
-        public override int GetHashCode() => ID * Name.GetHashCode();
-
-        public override bool Equals(object obj) 
-            => obj.GetHashCode() == this.GetHashCode();
+        public override bool Equals(object obj)
+            => obj is Student student && student.ID == this.ID && student.Name == this.Name;
     }
 }
