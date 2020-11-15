@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sprint_02.Task_02
 {
-    class SportCar : Car
+    internal class SportCar : Car
     {
         private int maxSpeed;
 
@@ -15,9 +15,7 @@ namespace Sprint_02.Task_02
             this.maxSpeed = maxSpeed;
         }
 
-        public new void ShowInfo()
-        {
-            Console.WriteLine("Mark: {0},\nProducted in {1}\nMaximum speed is {2}", mark, prodYear, maxSpeed);
-        }
+        public new void ShowInfo() 
+            => Console.WriteLine("Mark: {0},\nProducted in {1}\nMaximum speed is {2}", mark, prodYear, maxSpeed);
     }
 }

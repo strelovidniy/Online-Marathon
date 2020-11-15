@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sprint_04.Task_03
+﻿namespace Sprint_04.Task_03
 {
     public interface IDocument
     {
@@ -13,20 +9,13 @@ namespace Sprint_04.Task_03
         public int Pages 
         { 
             get => 0;
-            set 
-            { 
-                Pages = value; 
-            } 
+            set => Pages = value;
         }
 
-        public void AddPages(int pages)
-        {
-            this.Pages += pages;
-        }
+        public void AddPages(int pages) 
+            => this.Pages += pages;
 
-        public void Rename(string name)
-        {
-            this.Name = name;
-        }
+        public void Rename(string name) 
+            => this.Name = name;
     }
 }

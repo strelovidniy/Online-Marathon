@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sprint_01.Task_04
 {
@@ -37,9 +35,6 @@ namespace Sprint_01.Task_04
 
         }
 
-        ~DisposePatternImplementer()
-        {
-            Dispose(false);
-        }
+        ~DisposePatternImplementer() => Dispose(false);
     }
 }

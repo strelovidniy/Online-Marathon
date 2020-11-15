@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sprint_01.Task_05
+﻿namespace Sprint_01.Task_05
 {
-    class Person
+    internal class Person
     {
         protected int yearOfBirth;
         protected string healthInfo;

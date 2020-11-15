@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Sprint_05.Level_1.Task_01
 {
-    class Product
+    internal class Product
     {
         public string Name { get; set; }
         public string Category { get; set; }
@@ -12,12 +12,12 @@ namespace Sprint_05.Level_1.Task_01
 
         public static void TotalPrice(ILookup<string, Product> lookup)
         {
-            string group = "";
+            var group = "";
             decimal sum = 0;
 
-            foreach (var productgroup in lookup)
+            foreach (var productGroup in lookup)
             {
-                foreach (var product in productgroup)
+                foreach (var product in productGroup)
                 {
                     Console.WriteLine("{0} {1}", product.Name, product.Price);
                     group = product.Category;

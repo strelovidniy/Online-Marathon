@@ -2,7 +2,7 @@
 
 namespace Sprint_04.Task_04
 {
-    class Room<T> : ICloneable, IComparable where T : IShape
+    internal class Room<T> : ICloneable, IComparable where T : IShape
     {
         public double Height { get; set; }
 

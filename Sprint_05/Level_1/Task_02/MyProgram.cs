@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Sprint_05.Level_1.Task_02
 {
-    class MyProgram
+    internal class MyProgram
     {
         public static void Position(List<int> numbers)
         {
             var positions = new List<int>();
 
-            for (int i = 0; i <= numbers.LastIndexOf(5); ++i)
+            for (var i = 0; i <= numbers.LastIndexOf(5); ++i)
             {
                 if (numbers[i] == 5)
                 {
@@ -39,6 +39,6 @@ namespace Sprint_05.Level_1.Task_02
         }
 
         public static void Write(List<int> numbers)
-            => numbers.ForEach(x => Console.WriteLine(x));
+            => numbers.ForEach(Console.WriteLine);
     }
 }

@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sprint_03.Task_05
 {
-    class EventProgram
+    internal class EventProgram
     {
         public event EventHandler Show;
 
@@ -19,23 +17,15 @@ namespace Sprint_03.Task_05
         }
 
         static void Dog(object sender, EventArgs e)
-        {
-            Console.WriteLine("Dog");
-        }
+            => Console.WriteLine("Dog");
 
-        static void Cat(object sender, EventArgs e)
-        {
-            Console.WriteLine("Cat");
-        }
+        static void Cat(object sender, EventArgs e) 
+            => Console.WriteLine("Cat");
 
-        static void Mouse(object sender, EventArgs e)
-        {
-            Console.WriteLine("Mouse");
-        }
+        static void Mouse(object sender, EventArgs e) 
+            => Console.WriteLine("Mouse");
 
-        static void Elephant(object sender, EventArgs e)
-        {
-            Console.WriteLine("Elephant");
-        }
+        static void Elephant(object sender, EventArgs e) 
+            => Console.WriteLine("Elephant");
     }
 }

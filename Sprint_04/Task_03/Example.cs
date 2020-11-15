@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sprint_04.Task_03
 {
-    class Example
+    internal class Example
     {
         public static void Do()
         {

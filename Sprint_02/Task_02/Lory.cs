@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sprint_02.Task_02
 {
-    class Lory : Car
+    internal class Lory : Car
     {
         private double loadCapacity;
 
@@ -15,9 +15,7 @@ namespace Sprint_02.Task_02
             this.loadCapacity = loadCapacity;
         }
 
-        public new void ShowInfo()
-        {
-            Console.WriteLine("Mark: {0},\nProducted in {1}\nThe load capacity is {2}", mark, prodYear, loadCapacity);
-        }
+        public new void ShowInfo() 
+            => Console.WriteLine("Mark: {0},\nProducted in {1}\nThe load capacity is {2}", mark, prodYear, loadCapacity);
     }
 }

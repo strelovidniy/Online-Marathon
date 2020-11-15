@@ -4,9 +4,9 @@ using Sprint_03.Task_04;
 
 namespace Sprint_03
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var numbers = new List<int> { 1, 2, 3, 4, 5 };
             Console.WriteLine(numbers.ToString<int>());

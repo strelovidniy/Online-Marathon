@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sprint_02.Task_01
 {
@@ -8,10 +6,8 @@ namespace Sprint_02.Task_01
     {
         private bool isAuthomation;
 
-        public Tester(string name, DateTime hiringDate, bool isAuthomation) : base(name, hiringDate)
-        {
-            this.isAuthomation = isAuthomation;
-        }
+        public Tester(string name, DateTime hiringDate, bool isAuthomation) : base(name, hiringDate) 
+            => this.isAuthomation = isAuthomation;
 
         public new void ShowInfo()
         {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Sprint_03.Task_04
 {
@@ -9,7 +6,7 @@ namespace Sprint_03.Task_04
     {
         public static string ToString<T>(this List<int> list)
         {
-            string tempS = "";
+            var tempS = "";
 
             list.ForEach(element => tempS += $"{element}, ");
 

@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sprint_02.Task_01
 {
-    class Employee
+    internal class Employee
     {
         internal string name;
         private DateTime hiringDate;
@@ -15,12 +13,10 @@ namespace Sprint_02.Task_01
             this.hiringDate = hiringDate;
         }
 
-        public int Experience()
+        public int Experience() 
             => DateTime.Now.Year - hiringDate.Year - Convert.ToInt32(DateTime.Now.DayOfYear < hiringDate.DayOfYear);
-    
-        public void ShowInfo()
-        {
-            Console.WriteLine("{0} has {1} years of experience", name, Experience());
-        }
+
+        public void ShowInfo() 
+            => Console.WriteLine("{0} has {1} years of experience", name, Experience());
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Sprint_05.Level_1.Task_03
 {
-    class MyProgram
+    internal class MyProgram
     {
         public static void SearchKeys(Dictionary<string, string> persons)
             => Write(persons.Keys.ToList());

@@ -2,7 +2,7 @@
 
 namespace Sprint_01.Task_03
 {
-    class Fraction
+    internal class Fraction
     {
         private readonly int numerator;
         private readonly int denominator;

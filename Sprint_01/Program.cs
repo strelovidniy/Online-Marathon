@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Sprint_01
+﻿namespace Sprint_01
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             
         }

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Sprint_03.Task_03
 {
-    class ListProgram
+    internal class ListProgram
     {
         public delegate bool FindAll(int element);
 
