@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sprint_06
+namespace Sprint_07
 {
     internal class Program
     {
