@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint_03", "Sprint_03\Spri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint_04", "Sprint_04\Sprint_04.csproj", "{509FE4F0-6307-4A9B-B2CB-47AD9560C3B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint_05", "Sprint_05\Sprint_05.csproj", "{47AE5F0B-D1B8-48D6-9B68-1D5A94868029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint_05", "Sprint_05\Sprint_05.csproj", "{47AE5F0B-D1B8-48D6-9B68-1D5A94868029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint_06", "Sprint_06\Sprint_06.csproj", "{D8B12B27-DE6E-4A05-A8BD-ABB9BFC07635}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{47AE5F0B-D1B8-48D6-9B68-1D5A94868029}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AE5F0B-D1B8-48D6-9B68-1D5A94868029}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AE5F0B-D1B8-48D6-9B68-1D5A94868029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B12B27-DE6E-4A05-A8BD-ABB9BFC07635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B12B27-DE6E-4A05-A8BD-ABB9BFC07635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B12B27-DE6E-4A05-A8BD-ABB9BFC07635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B12B27-DE6E-4A05-A8BD-ABB9BFC07635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

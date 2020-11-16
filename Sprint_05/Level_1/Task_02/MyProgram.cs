@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Sprint_05.Level_1.Task_02
 {
@@ -21,7 +22,7 @@ namespace Sprint_05.Level_1.Task_02
         }
 
         public static void Remove(List<int> numbers)
-            => Write(numbers.FindAll(x => x <= 20));
+            => Write(numbers.FindAll(x => x < 20));
 
         public static void Insert(List<int> numbers)
         {

@@ -7,23 +7,14 @@ namespace Sprint_05.Level_1.Task_03
     internal class MyProgram
     {
         public static void SearchKeys(Dictionary<string, string> persons)
-            => Write(persons.Keys.ToList());
+            => persons.Keys.ToList().ForEach(Console.WriteLine);
 
         public static void SearchValues(Dictionary<string, string> persons)
-            => Write(persons.Values.ToList());
+            => persons.Values.ToList().ForEach(Console.WriteLine);
 
-        public static void SearchAdmin(Dictionary<string, string> persons)
-        { 
-            foreach (var person in persons)
-            {
-                if (person.Value == "Admin")
-                {
-                    Console.WriteLine("{0} {1}", person.Key, person.Value);
-                }
-            }
-        }
-
-        public static void Write(List<string> elements)
-            => elements.ForEach(x => Console.WriteLine(x));
+        public static void SearchAdmin(Dictionary<string, string> persons, string adminValue = "Admin")
+            => persons.ToLookup(item => item.Value, item => item.Key)[adminValue]
+                .ToList()
+                .ForEach(item => Console.WriteLine("{0} {1}", item, adminValue));
     }
 }
