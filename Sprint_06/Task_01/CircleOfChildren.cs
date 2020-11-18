@@ -5,7 +5,7 @@ namespace Sprint_06.Task_01
 {
     public class CircleOfChildren
     {
-        private List<string> children;
+        private readonly List<string> children;
 
         public CircleOfChildren(IEnumerable<string> children)
             => this.children = (List<string>) children;
