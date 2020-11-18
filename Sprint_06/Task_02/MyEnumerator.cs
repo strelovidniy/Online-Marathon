@@ -7,22 +7,22 @@ namespace Sprint_06.Task_02
 {
     public sealed class MyEnumerator : IEnumerator<Book>
     {
-        private int _currentIndex = -1;
-        private List<Book> _books;
+        private int currentIndex = -1;
+        private readonly List<Book> books;
 
         public MyEnumerator(IEnumerable<Book> books, Predicate<Book> predicate)
-            =>_books = books.ToList() ?? new List<Book>();
+            => this.books = books.ToList().FindAll(predicate);
         
         public MyEnumerator()
-            => _books = new List<Book>();
+            => books = new List<Book>();
 
         public bool MoveNext()
-            => ++_currentIndex < _books.Count;
+            => ++currentIndex < books.Count;
 
         public void Reset()
-            => _currentIndex = -1;
+            => currentIndex = -1;
 
-        public Book Current => _books[_currentIndex];
+        public Book Current => books[currentIndex];
 
         object? IEnumerator.Current => Current;
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Sprint_06.Task_02
 {
@@ -16,6 +15,6 @@ namespace Sprint_06.Task_02
         }
 
         public IEnumerator<Book> GetEnumerator()
-            => Books.ToList().FindAll(Filter).GetEnumerator();
+            => new MyEnumerator(Books, Filter);
     }
 }
