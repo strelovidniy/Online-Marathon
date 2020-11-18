@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Sprint_06.Task_01
 {
@@ -8,7 +9,7 @@ namespace Sprint_06.Task_01
         private readonly List<string> children;
 
         public CircleOfChildren(IEnumerable<string> children)
-            => this.children = (List<string>) children;
+            => this.children = children.ToList();
 
         public IEnumerable GetChildrenInOrder(int syllables, int childrenCount = 0)
         {
@@ -28,7 +29,7 @@ namespace Sprint_06.Task_01
 
             while (deletingCount > 0)
             {
-                index = (index + syllables - 1) % children.Count;
+                index = (--index + syllables) % children.Count;
 
                 yield return children[index];
 

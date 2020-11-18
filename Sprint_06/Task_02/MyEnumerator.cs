@@ -10,8 +10,8 @@ namespace Sprint_06.Task_02
         private int currentIndex = -1;
         private readonly List<Book> books;
 
-        public MyEnumerator(IEnumerable<Book> books, Predicate<Book> predicate)
-            => this.books = books.ToList().FindAll(predicate);
+        public MyEnumerator(IEnumerable<Book> books, Predicate<Book> filter)
+            => this.books = books.ToList().FindAll(filter);
         
         public MyEnumerator()
             => books = new List<Book>();

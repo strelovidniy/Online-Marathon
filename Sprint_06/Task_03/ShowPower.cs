@@ -12,6 +12,7 @@ namespace Sprint_06.Task_03
             {
                 yield return 1;
             }
+
             if (degree > 0)
             {
                 for (var i = 1; i <= degree; ++i)
@@ -19,6 +20,7 @@ namespace Sprint_06.Task_03
                     yield return result *= number;
                 }
             }
+
             if (degree < 0)
             {
                 for (var i = -1; i >= degree; --i)
