@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.Json;
+using Sprint_07.Task_05;
 
 namespace Sprint_07
 {
@@ -6,7 +8,9 @@ namespace Sprint_07
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var w = new Worker("Anna", 700, new Department("Mechanics", 1, new Worker("Tom", 600, null)));
+
+            Console.WriteLine(JsonSerializer.Serialize(w));
         }
     }
 }
