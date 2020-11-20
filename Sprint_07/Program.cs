@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Text.Json;
-using Sprint_07.Task_05;
+using System.Linq;
 
 namespace Sprint_07
 {
@@ -8,9 +7,14 @@ namespace Sprint_07
     {
         private static void Main(string[] args)
         {
-            var w = new Worker("Anna", 700, new Department("Mechanics", 1, new Worker("Tom", 600, null)));
+            String[] names = {"Jack", "Mark", "Harry", "May"};
+            var querry = names.Select(n => new {Name = n, Length = n.Length});
+            foreach (var name in querry)
+            {
+                Console.WriteLine(name);
+            }
 
-            Console.WriteLine(JsonSerializer.Serialize(w));
+            
         }
     }
 }
