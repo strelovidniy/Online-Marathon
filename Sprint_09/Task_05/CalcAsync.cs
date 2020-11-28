@@ -9,17 +9,17 @@ namespace Sprint_09.Task_05
         public static async void PrintSpecificSeqElementsAsync(int[] numbers)
         {
             Task jobTask = null;
-
-            var tasksList = numbers
-                .Select(number => Task.Run(() => Console.WriteLine("Seq[{0}] = {1}", number, Calc.Seq(number))))
-                .ToList();
-
+            
             try
             {
-                jobTask = Task.WhenAll(tasksList);
+                jobTask = Task.WhenAll(
+                    numbers.Select(
+                            number => Task.Run(
+                                () => Console.WriteLine("Seq[{0}] = {1}", number, Calc.Seq(number)))));
+
                 await jobTask;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 foreach (var innerException in jobTask.Exception.InnerExceptions)
                 {

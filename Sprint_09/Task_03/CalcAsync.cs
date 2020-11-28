@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Sprint_09.Task_03
@@ -14,8 +13,6 @@ namespace Sprint_09.Task_03
             for (var i = 1; i <= quant; i++)
             {
                 await Task.Run(() => Console.WriteLine("Seq[{0}] = {1}", i, SeqAsync(i).Result));
-
-                Task.FromResult(GetSeqAsyncTasks(quant));
             }
         }
 

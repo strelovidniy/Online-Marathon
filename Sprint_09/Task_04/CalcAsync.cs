@@ -15,9 +15,9 @@ namespace Sprint_09.Task_04
 
         public static async void PrintStream(IAsyncEnumerable<(int, int)> stream)
         {
-            await foreach (var valueTuple in stream)
+            await foreach (var (item1, item2) in stream)
             {
-                Console.WriteLine("Seq[{0}] = {1}", valueTuple.Item1, valueTuple.Item2);
+                Console.WriteLine("Seq[{0}] = {1}", item1, item2);
             }
         }
     }
