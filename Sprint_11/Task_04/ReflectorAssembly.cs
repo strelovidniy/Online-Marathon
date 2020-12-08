@@ -9,7 +9,7 @@ namespace Sprint_11.Task_04
     {
         public static void WriteAssemblies()
         {
-            foreach (var type in Assembly.GetCallingAssembly().GetTypes().Except(new Type[] { typeof(Reflector), typeof(Task) }).ToArray())
+            foreach (var type in Assembly.GetCallingAssembly().GetTypes().Except(new Type[] { typeof(Reflector), typeof(Task) }))
             {
                 Console.WriteLine((type.IsClass ? "Class" : "Interface") + ": " + type.Name);
 
