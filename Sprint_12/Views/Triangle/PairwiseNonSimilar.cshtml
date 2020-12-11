@@ -1,0 +1,11 @@
+﻿@using Sprint_12.Models
+
+<body style="background-color: yellowgreen; color: darkblue; font-size: 32px">
+    @foreach (var (triangle1, triangle2) in (IEnumerable<(Triangle, Triangle)>)ViewData["PairwiseNonSimilar"])
+    {
+        for (var i = 0; i < triangle1.ShowInfo().Count; i++)
+        {
+            @($"{triangle1.ShowInfo()[i],-60}|{triangle2.ShowInfo()[i]}")<br/>
+        }
+    }
+</body>

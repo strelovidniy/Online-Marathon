@@ -1,0 +1,9 @@
+﻿@using System.Collections
+
+<body style="background-color: yellowgreen; color: darkblue; font-size: 46px">
+    <p>The triangle with greatest perimeter:</p>
+    @foreach (var line in (IEnumerable)ViewData["GreatestByPerimeter"])
+    {
+        @line<br>
+    }
+</body>
