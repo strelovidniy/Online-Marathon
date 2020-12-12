@@ -1,0 +1,6 @@
+﻿@using Sprint_13.Services
+<h2>It's time to shopping!</h2>
+
+@inject ITimeService Time
+
+<p>@Time.GeTimeForTomorrow().ToShortDateString()</p>

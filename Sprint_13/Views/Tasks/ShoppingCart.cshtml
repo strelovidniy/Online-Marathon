@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "ShoppingCart";
+}
+
+<h1>Your shopping cart</h1>
+<form method="post">
+    <p><label for="fullname">Input your fullname:</label></p>
+    <input id="fullname" name="fullname" required /><br />
+    <p><label for="address">Input your address:</label></p>
+    <input id="address" name="address" required /><br /><br />
+
+    <p>
+        <select>
+            @foreach (var item in ViewBag.Supermarkets)
+            {
+                <option>@item</option>
+            }
+        </select>
+    </p>
+
+    <p>
+        @foreach (var day in ViewBag.Days)
+        {
+            <div class="radio">
+                <input type="radio">@day
+            </div>
+        }
+    </p>
+
+    <p>
+        <select size="@ViewBag.ShoppingList.Count" style="height: 100px; width: 100px">
+            @foreach (var item in ViewBag.ShoppingList)
+            {
+                <option>@item.Key</option>
+            }
+        </select>
+    </p>
+    
+    <p><input type="submit" value="Send" /></p>
+</form>

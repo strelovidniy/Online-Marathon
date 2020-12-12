@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Greetings";
+    var myMessage = "Hello C# Marathon!";
+}
+
+<h1>Greetings</h1>
+<p>The value of myMessage is: @myMessage</p>
+
+@{
+    myMessage = "Welcome to our project!";
+}
+
+<p>The greeting is: @myMessage</p>
+
+@{
+    var day = DateTime.Now.DayOfWeek;
+}
+
+<p>Here in Ukraine: @day</p>
+
+@{
+    var hour = DateTime.Now.Hour;
+
+    if (hour >= 5 && hour < 11)
+    {
+        myMessage = "Morning";
+    }
+    if (hour >= 11 && hour < 17)
+    {
+        myMessage = "Day";
+    }
+    if (hour >= 17 && hour < 23)
+    {
+        myMessage = "Evening";
+    }
+    if (hour >= 23 || hour < 5)
+    {
+        myMessage = "Night";
+    }
+}
+
+<p>We wish you: Good @myMessage!</p>
+<p>Today is @DateTime.Now.DayOfWeek</p>
+<table style="width: 200px">
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Day</td>
+        <td>@DateTime.Now.Day</td>
+    </tr>
+    <tr>
+        <td>Hour</td>
+        <td>@DateTime.Now.Hour</td>
+    </tr>
+    <tr>
+        <td>Minute</td>
+        <td>@DateTime.Now.Minute</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>@DateTime.Now.Second</td>
+    </tr>
+</table>
+<style>
+    td
+    {
+        border: 1px solid black;
+    }
+    th 
+    {
+        border: 1px solid black;
+    }
+</style>
