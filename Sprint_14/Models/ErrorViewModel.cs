@@ -1,6 +1,4 @@
-using System;
-
-namespace Sprint_14.Models
+namespace ProductsWithRouting.Models
 {
     public class ErrorViewModel
     {
