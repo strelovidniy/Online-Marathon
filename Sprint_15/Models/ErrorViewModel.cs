@@ -1,5 +1,3 @@
-using System;
-
 namespace Sprint_15.Models
 {
     public class ErrorViewModel
