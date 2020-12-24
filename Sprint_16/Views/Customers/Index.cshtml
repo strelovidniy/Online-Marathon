@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Sprint_16.Models.Customer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Customers</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<nav class="navbar navbar-expand-sm navbar-light">
+    <a>Find by name:&nbsp;&nbsp;</a>
+    <form class="form-inline" asp-action="Find">
+        <input class="form-control mr-sm-2" type="text" name="substring" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+    <a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;@Html.ActionLink("Back to Full List", "Index")</a>
+</nav>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="SortByLastName">@Html.DisplayNameFor(model => model.LastName)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                <a asp-action="SortByAddress">@Html.DisplayNameFor(model => model.Address)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Discount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discount)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
