@@ -1,6 +1,4 @@
-using System;
-
-namespace Sprint_18.Models
+namespace TaskAuthenticationAuthorization.Models
 {
     public class ErrorViewModel
     {
