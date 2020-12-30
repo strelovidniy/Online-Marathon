@@ -1,6 +1,6 @@
 using System;
 
-namespace Sprint_17.Models
+namespace ShoppingSystem.Models
 {
     public class ErrorViewModel
     {
